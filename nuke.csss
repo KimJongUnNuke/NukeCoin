@@ -1,0 +1,2222 @@
+
+p{
+  font-family: 'Indie Flower', cursive;
+}
+h1, h2, h3{
+  font-family: 'Black Ops One', sans-serif;
+  color: #1884ff;
+  text-shadow: 0.2rem 0.2rem 0 #92c5ff9f;
+}
+
+
+
+#mainPage {
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczPeefGlf9Ena5YjAp6ePhaTQ5LftASgj54J_McWc8VOi66BPo69LYOeI0Q0_U6GiQ6Z8E9GiBmFmnqWBY8llVroHLyoS1bRs373MmjmN3jiDMGXP6k=w2400");
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-size: cover; /* Cover the entire area */
+    background-position: bottom; /* Position at the bottom */
+    flex-direction: column; /* Stack children vertically */
+  }
+
+
+
+  #topBar {
+    position: fixed;
+    /* Make the box fixed */
+  
+    top: .00001px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    /* Flex container to align items horizontally */
+    /* justify-content: space-between; /* Space items evenly */
+    align-items: center;
+    /* Center the items vertically */
+   
+    /* Box around the container */
+  
+    padding: 0.2rem;
+    background-color: #fff;
+    /* White background for the box */
+    width: 100%;
+    /* Adjust width as needed */
+   
+    z-index: 999999;
+    box-shadow: .2rem .2rem 2rem #1884ff;
+  }
+  .responsive-image {
+    width: 80%;
+    /* Adjust percentage as needed */
+    height: auto;
+    /* Maintains the aspect ratio */
+    max-width: 57px;
+    /* Optional: limit the maximum size */
+  }
+  
+  .body {
+    background-color: #f3f1f1;
+  }
+  #logoInBox {
+    display: block;
+    width: 5%;
+    height: auto;
+    margin-left: 20px;
+  }
+  
+
+  
+
+
+  #textAndLogos {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  #reText {
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+  }
+  #logos1,
+  #logos2 {
+    margin-left: 0.5rem;
+  }
+  @media only screen and (max-width: 1600px) {
+    #logoInBox {
+      display: block;
+      width: 5.5rem;
+      height: auto;
+      margin-left: 20px;
+    }
+}
+  @media only screen and (max-width: 550px) {
+    #logoInBox {
+      display: block;
+      width: 4rem;
+      height: auto;
+      margin-left: 20px;
+    }
+    .responsive-image {
+      width: 50%;
+      /* Adjust percentage as needed */
+      height: auto;
+      /* Maintains the aspect ratio */
+      max-width: 57px;
+      /* Optional: limit the maximum size */
+    }
+    #topBar {
+
+      padding: 0.2rem;
+    
+    }
+    
+    #reText {
+      margin-right: 0.2rem;
+      font-size: 1rem;
+    }
+    #logos1,
+    #logos2 {
+      margin-left: 0.0rem;
+    }
+    #logos1{
+      margin-right: -1.5rem;
+    }
+    #logos2{
+      margin-right: -1rem;
+    }
+  }
+
+  
+
+
+  #centerLogo {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    /* top: 20%;  Adjust this value to position near the bottom */
+    top: 12%;
+
+  }
+
+  #header{
+    color: #ffffff;
+    font-size: 4rem;
+    text-shadow: 0.4rem 0.4rem 0 #1884ff9f;
+    margin-left: -30rem;
+  }
+  #header2{
+    color: #ffffff;
+    text-shadow: 0.4rem 0.4rem 0 #1884ff9f;
+    margin-top: -2.5rem;
+    font-size: 2.5rem;
+  }
+
+  #kimCar {
+    width: 40%;
+    height: auto;
+    animation: slideInRight 1s forwards;
+    position: absolute;
+    right: -100%;
+    /* Start off-screen to the right */
+    bottom: 20%;
+    /* Center vertically */
+    transform: translateY(50%);
+    z-index: 99999;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      right: -100%;
+      /* Start from outside the right side */
+      opacity: 0;
+    }
+  
+    to {
+      right: 0%;
+      /* Move towards right slightly */
+      opacity: 1;
+    }
+  }
+ 
+
+  @media only screen and (max-width: 1199px) {
+  #centerLogo {
+      width: 40%;
+    }
+    #kimCar {
+      width: 55%;
+      height: auto;
+    
+      bottom: 10%;
+    
+    }
+    #header{
+  
+      font-size: 4rem;
+
+      margin-left: -10rem;
+    }
+    #header2{
+      margin-top: -2.5rem;
+      font-size: 2.5rem;
+    }
+  
+   
+  }
+  @media only screen and (max-width: 992px) {
+
+    #centerLogo {
+      width: 70%;
+      height: auto;
+      position: absolute;
+      /* top: 20%;  Adjust this value to position near the bottom */
+      top: 12%;
+
+  
+    }
+  
+    #header{
+  
+      font-size: 3rem;
+      text-align: center;
+      
+
+      text-shadow: 0.3rem 0.3rem 0 #1884ff9f;
+    }
+    #header2{
+      margin-top: -2.5rem;
+      font-size: 2rem;
+      text-shadow: 0.3rem 0.3rem 0 #1884ff9f;
+    }
+    #kimCar {
+      width: 70%;
+      height: auto;   
+      bottom: 15%;
+   
+    }
+  }
+  @media only screen and (max-width: 768px) {
+
+    #centerLogo {
+      width: 70%;
+      height: auto;
+      position: absolute;
+      /* top: 20%;  Adjust this value to position near the bottom */
+      top: 12%;
+
+  
+    }
+  
+    #header{
+  
+
+ 
+      margin-left: -12rem;
+      
+
+     
+    }
+    #header2{
+      margin-top: -2.5rem;
+      font-size: 2rem;
+    }
+    #kimCar {
+      width: 70%;
+      height: auto;   
+      bottom: 15%;
+   
+    }
+  }
+  @media only screen and (max-width: 700px) {
+
+    #centerLogo {
+      width: 70%;
+      height: auto;
+      position: absolute;
+      /* top: 20%;  Adjust this value to position near the bottom */
+      top: 20%;
+
+  
+    }
+  
+    #header{
+       font-size: 2.5rem;
+      margin-left: -12rem;
+      text-shadow: 0.2rem 0.2rem 0 #1884ff9f;
+
+     
+    }
+    #header2{
+      margin-top: -1.5rem;
+      font-size: 1.5rem;
+      text-shadow: 0.2rem 0.2rem 0 #1884ff9f;
+    }
+    #kimCar {
+      width: 70%;
+      height: auto;   
+      bottom: 15%;
+   
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    #header{
+      font-size: 2.3rem;
+     margin-left: -12rem;
+     text-shadow: 0.2rem 0.2rem 0 #1884ff9f;
+
+    
+   }
+   #header2{
+     margin-top: -1.5rem;
+     font-size: 1.4rem;
+     text-shadow: 0.2rem 0.2rem 0 #1884ff9f;
+  }
+  #kimCar {
+    width: 80%;
+    height: auto;   
+    bottom: 12%;
+ 
+  }
+  }
+  @media only screen and (max-width: 500px) {
+    #header{
+      font-size: 2rem;
+     margin-left: -8rem;
+     text-shadow: 0.2rem 0.2rem 0 #1884ff9f;
+
+    
+   }
+   #header2{
+     margin-top: -1.5rem;
+     font-size: 1.4rem;
+     text-shadow: 0.15rem 0.15rem 0 #1884ff9f;
+  }
+  #kimCar {
+    width: 80%;
+    height: auto;   
+    bottom: 10%;
+ 
+  }
+  }
+  @media only screen and (max-width: 470px) {
+    #header{
+      font-size: 2rem;
+     margin-left: -8rem;
+     text-shadow: 0.2rem 0.2rem 0 #1884ff9f;
+
+    
+   }
+   #header2{
+     margin-top: -1.5rem;
+     font-size: 1.1rem;
+     text-shadow: 0.15rem 0.15rem 0 #1884ff9f;
+  }
+  #kimCar {
+    width: 90%;
+    height: auto;   
+    bottom: 14%;
+ 
+  }
+  }
+  @media only screen and (max-width: 395px) {
+    #header{
+      font-size: 2rem;
+     margin-left: -5rem;
+     text-shadow: 0.2rem 0.2rem 0 #1884ff9f;
+
+    
+   }
+   #header2{
+     margin-top: -1.5rem;
+     font-size: 1rem;
+     text-shadow: 0.15rem 0.15rem 0 #1884ff9f;
+  }
+  #kimCar {
+    width: 95%;
+    height: auto;   
+    bottom: 15%;
+ 
+  }
+  }
+  @media only screen and (max-width: 340px) {
+    #header{
+      font-size: 2rem;
+     margin-left: 0rem;
+     text-shadow: 0.2rem 0.2rem 0 #1884ff9f;
+     
+    
+   }
+   #header2{
+     margin-top: -1.5rem;
+     font-size: 1rem;
+     text-shadow: 0.15rem 0.15rem 0 #1884ff9f;
+     text-align: center;
+
+  }
+  #kimCar {
+    width: 100%;
+    height: auto;   
+    bottom: 15%;
+ 
+  }}
+
+/**
+
+
+
+this is the about page
+
+
+
+
+**/
+
+#aboutPage{
+
+  padding:0 15%;
+  
+}
+
+#aboutNuke{
+  font-size: 6rem;
+ 
+  text-shadow: 0.4rem 0.4rem 0 rgb(152, 171, 255)
+}
+
+
+
+#conFirst{
+  display: flex;
+  align-items: center;
+
+}
+#conFirstp1{
+  font-size: 2rem;
+
+}
+
+#conFirstp2{
+  font-size: 2rem;
+
+}
+
+#kimPizza{
+  width: 50%;
+  height: auto;
+  flex: 1;
+  order:2;
+}
+#conFirstp3{
+  margin-top: 5rem;
+  font-size: 3rem;
+   text-align: center;
+}
+#conFirstp4{
+  margin-top: -2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#conApproval{
+  display: flex;
+  align-items: center;
+}
+#approvalText{
+  flex:1;
+  order: 2;
+
+}
+#conApp1{
+  text-align: right;
+  margin-top: 15rem;
+  font-size: 3rem;
+  margin-right: 5%;
+  margin-left: 20rem;
+}
+#conApp2{
+  font-size: 2rem;
+}
+
+
+
+#kimThumbsUp{
+margin-top: -15rem;
+  width: 40%;
+  height: auto;
+  order: 1;
+
+}
+
+#humourous {
+
+  font-size: 3rem;
+  text-align: right;
+  margin-right: 6%;
+  margin-top: 13%;
+  margin-left: 50%;
+  
+}
+
+#conAck{
+  display: flex;
+
+}
+
+#northKoreaLetter{
+  width: 40%;
+  max-width: 600px; /* Maximum width */
+  height: auto;
+  margin-top: -17%;
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+#conAck1{
+  font-size: 2rem;
+
+ margin-top: 20rem;
+ order: 1;
+ margin-left: 5%;
+}
+
+
+#feature{
+  margin-top: 15%;
+  font-size: 6rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+#conFeat{
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+}
+#conFeatp1{
+font-size: 2rem;
+
+}
+#conFeatp2{
+  margin-top: 4rem;
+ 
+
+  font-size: 3rem;
+
+  }
+
+#kimNukeMoon{
+  width: 50%;
+  height: auto;
+}
+#gain{
+  margin-top: 20%;
+  font-size: 3rem;
+ text-align: right;
+  margin-right: 15%;
+}
+
+
+#kimPoster{
+  width: 40%;
+  height: auto;
+  margin-top: -15%;
+
+}
+
+#conGain{
+  display: flex;
+  align-items: center;
+
+}
+
+#hold1{
+  font-size: 2rem;
+
+margin-right: 20%;
+}
+#hold2{
+  font-size: 2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1880px) {
+  
+  #humourous {
+
+    font-size: 3rem;
+    text-align: right;
+  
+    margin-top: 20%;
+    margin-left: 40%;
+  }
+  #northKoreaLetter{
+    width: 40%;
+    height: auto;
+    margin-top: -20rem;
+
+  }
+  #conAck1{
+  font-size: 2rem;
+  
+   margin-top: 10rem;
+   order: 1;
+   margin-left: 5%;
+  }
+}
+@media only screen and (max-width: 1640px) {
+  #aboutPage{
+
+    padding:0 10%;
+    
+  }
+  
+}
+@media only screen and (max-width: 1450px) {
+  #aboutPage{
+
+    padding:0 10%;
+    
+  }
+  #gain{
+    margin-top: 20%;
+    font-size: 3rem;
+   text-align: right;
+   margin-right: 0;
+  }
+  #kimPoster{
+    width: 40%;
+    height: auto;
+    margin-top: -15%; 
+  }
+  #conApp1{
+    margin-top: 10rem;
+  }
+  #conAck1{
+   margin-top: 5rem;
+  }
+  
+}
+
+
+@media only screen and (max-width: 1200px) {
+  
+
+#conFirstp1{
+  font-size: 2rem;
+  margin-left: -2rem;
+}
+
+#conFirstp2{
+  font-size: 2rem;
+  margin-left: -2rem;
+
+}
+
+#kimPizza{
+  width: 60%;
+  margin-right: -4rem;
+}
+
+#conApproval{
+  display: flex;
+  align-items: center;
+}
+#approvalText{
+  flex:1;
+  order: 2;
+
+}
+#conApp1{
+  
+  margin-top: 15rem;
+  font-size: 3rem;
+  margin-right: 5%;
+  margin-left: 14rem;
+}
+#conApp2{
+  font-size: 2rem;
+  margin-right: -2rem;
+}
+
+#kimThumbsUp{
+margin-top: -15rem;
+  width: 50%;
+  height: auto;
+  order: 1;
+  margin-left: -7rem;
+
+}
+
+#humourous {
+  font-size: 3rem;
+  text-align: center; /* Center the heading */
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#conAck {
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Center items */
+}
+
+#northKoreaLetter {
+  width: 90%; /* Adjust width for smaller screens */
+  margin-top: 0; /* Reset margin for better spacing */
+}
+
+#conAck1 {
+  font-size: 1.5rem;
+  margin-top: -5rem;
+  margin-left: 0;
+  text-align: center; /* Center text */
+  margin-top: 1.5rem;
+}
+
+#conFeat{
+  margin-top: 19%;
+  display: flex;
+  align-items: center;
+}
+#conFeatp1{
+
+font-size: 2rem;
+margin-top: 6rem;
+margin-left: -2rem;
+
+}
+#cap{
+  font-size: 3rem;
+}
+#conFeatp2{
+  margin-top: 5rem;
+  font-size: 3rem;
+  margin-right: -15rem;
+
+  }
+
+#kimNukeMoon{
+  
+  width: 60%;
+  height: auto;
+  position: relative;
+  margin-top: -20rem;
+  margin-right: -2rem;
+ 
+}
+#gain{
+  margin-top: 20%;
+  font-size: 3rem;
+ text-align: right;
+ margin-right: -2rem;
+
+}
+
+
+#kimPoster{
+  width: 40%;
+  height: auto;
+  margin-top: -15%;
+  margin-left: -2rem;
+
+}
+
+#conGain{
+  display: flex;
+  align-items: center;
+
+}
+
+#hold1{
+  font-size: 2rem;
+  margin-left: -2rem;
+
+margin-right: 10%;
+}
+#hold2{
+  font-size: 2rem;
+  margin-right: -2rem;
+
+}
+
+
+
+}
+
+@media only screen and (max-width: 1025px) {
+
+  #conApp1{
+    
+    margin-top: 10rem;
+  }
+  }
+
+@media only screen and (max-width: 940px) {
+  #aboutNuke{
+    font-size: 5rem;
+   
+    text-shadow: 0.4rem 0.4rem 0 rgb(152, 171, 255)
+  }
+  #conAck1{
+    font-size: 1.5rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+  
+
+  }
+  
+  #gain{
+    margin-top: 20%;
+    font-size: 3rem;
+   text-align: right;
+   margin-right: -2rem;
+  
+  }
+  
+  
+  #kimPoster{
+    width: 70%;
+    height: auto;
+    margin-top: 0%;
+    margin-left: -2rem;
+  
+  }
+
+  #hold1{
+    font-size: 2rem;
+    margin-left: -2rem;
+  
+ 
+  }
+  #hold2{
+    margin-top: 10%;
+    font-size: 2rem;
+    margin-right: -2rem;
+   
+  
+  }
+   
+}
+
+
+@media only screen and (max-width: 795px) {
+  #aboutNuke{
+    font-size: 4rem;
+   
+    text-shadow: 0.4rem 0.4rem 0 rgb(152, 171, 255)
+  }
+  #aboutPage{
+
+    padding:0 10%;
+    
+  }
+  
+
+  #conFirstp1{
+    font-size: 1.5rem;
+    margin-left: -2rem;
+  }
+  
+  #conFirstp2{
+    font-size: 1.5rem;
+    margin-left: -2rem;
+  
+  }
+
+  
+  #kimPizza{
+    width: 60%;
+    margin-right: -4rem;
+  }
+  #conFirstp3{
+    margin-top: 5rem;
+    font-size: 2rem;
+     text-align: center;
+  }
+  #conFirstp4{
+    margin-top: -1.5rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+
+  #conApproval{
+    display: flex;
+    align-items: center;
+  }
+  #approvalText{
+    flex:1;
+    order: 2;
+  
+  }
+  #conApp1{
+    
+    margin-top: 10rem;
+    font-size: 2rem;
+    margin-right: 5%;
+    margin-left: 4rem;
+  }
+  #conApp2{
+    font-size: 1.5rem;
+    margin-right: -2rem;
+  }
+  
+  #kimThumbsUp{
+  margin-top: -10rem;
+    width: 50%;
+    height: auto;
+    order: 1;
+    margin-left: -5rem;
+  
+  }
+  
+  #humourous {
+    font-size: 2rem;
+    text-align: center; /* Center the heading */
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #conAck {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center items */
+  }
+  
+  #northKoreaLetter {
+    width: 90%; /* Adjust width for smaller screens */
+    margin-top: 0; /* Reset margin for better spacing */
+  }
+  
+
+  #conAck1{
+    font-size: 1rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+  
+
+  }
+  #conFeat{
+    margin-top: 14%;
+    display: flex;
+    align-items: center;
+  }
+  #conFeatp1{
+  
+  font-size: 1.5rem;
+  margin-top: 7rem;
+  margin-left: -2rem;
+  
+  }
+  #cap{
+    font-size: 2.5rem;
+  }
+  #conFeatp2{
+    margin-top: 0rem;
+    font-size: 2rem;
+    margin-right: -15rem;
+  
+    }
+  
+  #kimNukeMoon{
+    
+    width: 60%;
+    height: auto;
+    position: relative;
+    margin-top: -10rem;
+    margin-right: -2rem;
+   
+  }
+  #gain{
+    margin-top: 10%;
+    font-size: 2rem;
+   text-align: right;
+   margin-right: -2rem;
+  
+  }
+  
+  
+ 
+  
+  #conGain{
+    display: flex;
+    align-items: center;
+  
+  }
+  #kimPoster{
+    width: 70%;
+    height: auto;
+    margin-top: -10%;
+    margin-left: -2rem;
+  
+  }
+
+  #hold1{
+    font-size: 1.5rem;
+    margin-left: -2rem;
+  
+ 
+  }
+  #hold2{
+    margin-top: 10%;
+    font-size: 1.5rem;
+    margin-right: -2rem;
+   
+  
+  }
+  
+  
+}
+
+@media only screen and (max-width: 620px) {
+  #aboutNuke{
+    font-size: 4rem;
+   
+    text-shadow: 0.3rem 0.3rem 0 rgb(152, 171, 255)
+  }
+  #aboutPage{
+
+    padding:0 10%;
+    
+  }
+  #conFirst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  
+  }
+
+  #conFirstp1{
+    font-size: 1.5rem;
+    margin-left: -1.5rem;
+    order:1;
+  }
+  #kimPizza{
+    width: 100%;
+  
+    margin-left: auto;
+    margin-right: auto;
+    order: 2;
+    margin-top: 2rem;
+  }
+  
+  #conFirstp2{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-right: -2rem;
+  order: 3;
+  margin-top: 2.5rem;
+  }
+
+  
+  
+  #conFirstp3{
+    margin-top: 1rem;
+    font-size: 1.7rem;
+     text-align: center;
+    margin-right: -2rem;
+    margin-left: -2rem;
+  }
+  #conFirstp4{
+    margin-top: -1.5rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+
+  #conApproval{
+    display: flex;
+    align-items: center;
+  }
+  #approvalText{
+    flex:1;
+    order: 2;
+  
+  }
+  #conApp1{
+    
+    margin-top: 5rem;
+    font-size: 2rem;
+    margin-right: 5%;
+    margin-left: 4rem;
+  }
+  #conApp2{
+    font-size: 1.5rem;
+    margin-right: -2rem;
+    margin-top: 5rem;
+    margin-left: -4rem;
+  }
+  
+  #kimThumbsUp{
+  margin-top: -15rem;
+    width: 70%;
+    height: auto;
+    order: 1;
+    margin-left: -5rem;
+  
+  }
+  
+  #humourous {
+    font-size: 2rem;
+    text-align: center; /* Center the heading */
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #conAck {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center items */
+  }
+  
+  #northKoreaLetter {
+    width: 90%; /* Adjust width for smaller screens */
+    margin-top: 0; /* Reset margin for better spacing */
+  }
+  
+
+  #conAck1{
+    font-size: 1rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-top: .5rem;
+  
+
+  }
+  #conFeat{
+    margin-top: 14%;
+    display: flex;
+    align-items: center;
+   
+  }
+  #conFeatp1{
+  
+  font-size: 1.5rem;
+  margin-top: 10rem;
+  margin-left: -2rem;
+  
+  }
+  #cap{
+    font-size: 2.5rem;
+  }
+  #conFeatp2{
+    margin-top: 0rem;
+    font-size: 2rem;
+    margin-right: -15rem;
+  
+    }
+  
+  #kimNukeMoon{
+    
+    width: 62%;
+    height: auto;
+    position: relative;
+    margin-top: -15rem;
+    margin-right: -2rem;
+   
+  }
+  #gain{
+    margin-top: 5rem;
+    font-size: 2rem;
+   text-align: right;
+   margin-right: -2rem;
+  
+  }
+  
+  
+ 
+  
+  #conGain{
+    display: flex;
+    align-items: center;
+  
+  }
+  #kimPoster{
+    width: 90%;
+    height: auto;
+    margin-top: -10%;
+    margin-left: -2rem;
+  
+  }
+
+  #hold1{
+    font-size: 1.5rem;
+    margin-left: -2rem;
+  
+ 
+  }
+  #hold2{
+    margin-top: 10%;
+    font-size: 1.5rem;
+    margin-right: -2rem;
+   
+  
+  }
+  
+  
+}
+  
+@media only screen and (max-width: 520px) {
+  #conFirstp1{
+    font-size: 1.5rem;
+    margin-left: -1.5rem;
+    margin-top: -1rem;
+  }
+  #conFirstp3{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+     text-align: center;
+    margin-right: -2rem;
+    margin-left: -2rem;
+  }
+  #conApp1{
+    
+    margin-top: 5rem;
+    font-size: 1.7rem;
+    margin-right: 5%;
+    margin-left: 4rem;
+  }
+  #conFeat{
+    margin-top: 14%;
+    display: flex;
+    align-items: center;
+   
+  }
+  #conFeatp1{
+  
+  font-size: 1.5rem;
+  margin-top: 20rem;
+  margin-left: -2rem;
+  margin-right: -20rem;
+  
+  }
+  #cap{
+    font-size: 2.5rem;
+  }
+  #conFeatp2{
+    margin-top: -1.5rem;
+    font-size: 2rem;
+    margin-right: -25rem;
+   
+  
+    }
+  
+  #kimNukeMoon{
+    
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: -16rem;
+  
+    margin-left: auto;
+    margin-right: auto;
+
+   
+  }
+  #gain{
+    margin-top: 5rem;
+    font-size: 2rem;
+   text-align: right;
+   margin-right: -2rem;
+  
+  }
+
+}
+@media only screen and (max-width: 490px) {
+  #kimThumbsUp{
+    margin-top: -15rem;
+      width: 80%;
+      height: auto;
+      order: 1;
+      margin-left: -5rem;
+    
+    }
+  #conFirstp1{
+    font-size: 1.5rem;
+    margin-left: -1.5rem;
+    margin-top: -1rem;
+  }
+  #conApp2{
+    font-size: 1.5rem;
+    margin-right: -2rem;
+    margin-top: 7rem;
+    margin-left: -4.5rem;
+  }
+  
+
+  #humourous {
+    font-size: 1.7rem;
+    text-align: center; /* Center the heading */
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 466px) {
+ 
+
+  #conApp1{
+    
+    margin-top: 5rem;
+    font-size: 1.7rem;
+    margin-right: 0;
+    margin-left: 0rem;
+  }
+  #conApp2{
+    font-size: 1.5rem;
+    margin-right: -2rem;
+    margin-top: 9rem;
+    margin-left: -5rem;
+  }
+  #kimThumbsUp{
+    margin-top: -18rem;
+      width: 80%;
+      height: auto;
+      order: 1;
+      margin-left: -5rem;
+    
+    }
+    #conFeatp1{
+  
+      font-size: 1.5rem;
+      margin-top: 17rem;
+      margin-left: -2rem;
+      margin-right: -15rem;
+      
+    }
+
+    #conFeatp2{
+      margin-top: -1.5rem;
+      font-size: 1.7rem;
+      margin-right: -15rem;
+
+     
+    
+      }
+
+      #kimNukeMoon{
+    
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: -18rem;
+      
+        margin-left: -3rem;
+    
+       
+      }
+
+}
+@media only screen and (max-width: 420px) {
+  #conFirstp2{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-right: -2rem;
+  order: 3;
+  margin-top: 1rem;
+  }
+  #conApp1{
+    
+    margin-top: 5rem;
+    font-size: 1.7rem;
+    margin-right: -1rem;
+    margin-left: 0rem;
+  }
+  #conApp2{
+    font-size: 1.5rem;
+    margin-right: -1rem;
+    margin-top: 15rem;
+    margin-left: -10rem;
+    text-align: right;
+  }
+  #kimThumbsUp{
+    margin-top: -21rem;
+      width: 90%;
+      height: auto;
+      order: 1;
+      margin-left: -3.5rem;
+    
+    }
+    #humourous {
+      font-size: 1.7rem;
+      text-align: center; /* Center the heading */
+      margin-top: 4rem;
+      margin-left: -1rem;
+      margin-right: -1rem;
+    }
+    #gain{
+      margin-top: 5rem;
+      font-size: 2rem;
+     text-align: right;
+     margin-right: -2rem;
+     margin-left: -2rem;
+    
+    }
+   
+}
+/**
+;this is after the second ticker
+**/
+
+
+#conBuy{
+  font-size: 4rem;
+
+ text-align: center;
+}
+#steps1{
+  display: flex;
+  padding:0 15%;
+}
+#steps2{
+  display: flex;
+  padding:0 15%;
+}
+
+
+.box {
+  flex: 30 0 30%;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  transition: all 0.5s ease;
+  margin: 1rem;
+  padding: 2rem;
+
+}
+
+#link-button {
+  display:flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #000000;
+  color: white;
+  padding: 4px 15px;
+  border-radius: 10px;
+  justify-content: center; /* center horizontally */
+  align-items: center; 
+
+  
+}
+#okxImg{
+  width: 10%;
+  height: auto;
+}
+
+#wallet1{
+  margin-left: 1rem;
+}
+
+#link-button2 {
+  display:flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #AB9FF2;
+  color: white;
+  padding: 4px 15px;
+  border-radius: 10px;
+  justify-content: center; /* center horizontally */
+  align-items: center; 
+  
+}
+#okxImg2{
+  width: 5%;
+  height: auto;
+}
+#wallet2{
+  margin-left: 1rem;
+  
+}
+
+#link-button3 {
+  margin-top: 4rem;
+  display:flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #000000;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 10px;
+  justify-content: center; /* center horizontally */
+  align-items: center; 
+  
+}
+
+#link-button4 {
+  display:flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 4px 15px;
+  border-radius: 10px;
+  justify-content: center; /* center horizontally */
+  align-items: center; 
+  border: 1px solid #00fc15;
+  margin-top: 2rem;
+  
+}
+#okxImg4{
+  width: 4%;
+  height: auto;
+}
+#wallet4{
+  margin-left: 1rem;
+  
+}
+#link-button5 {
+  display:flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 4px 15px;
+  border-radius: 10px;
+  justify-content: center; /* center horizontally */
+  align-items: center; 
+  border: 1px solid #000000;
+  margin-top: 2rem;
+  
+}
+#okxImg5{
+  width: 5.5%;
+  height: auto;
+}
+#wallet5{
+  margin-left: 1rem;
+  
+}
+
+#link-button6 {
+  display:flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 4px 15px;
+  border-radius: 10px;
+  justify-content: center; /* center horizontally */
+  align-items: center; 
+  border: 1px solid #000000;
+  margin-top: 2rem;
+  
+}
+#okxImg6{
+  width: 4%;
+  height: auto;
+}
+#wallet6{
+  margin-left: 1rem;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  #steps1{
+
+    padding:0 10%;
+  }
+  #steps2{
+ 
+    padding:0 10%;
+  }
+  #okxImg{
+  width: 10%;
+  height: auto;
+}
+
+
+#okxImg2{
+  width: 7%;
+  height: auto;
+}
+#okxImg4{
+  width: 6%;
+  height: auto;
+}
+ 
+#okxImg5{
+  width: 6%;
+  height: auto;
+}
+#okxImg6{
+  width: 6%;
+  height: auto;
+}
+}
+@media only screen and (max-width: 992px) {
+  #steps1{
+    padding:0 5%;
+    margin-top: -5rem;
+  }
+  #steps2{
+
+    padding:0 5%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #conBuy{
+    font-size: 3rem;
+  
+  }
+  #steps1{
+ 
+    padding:0 0%;
+    margin-top: -5rem;
+  }
+  #steps2{
+ 
+    padding:0 0%;
+  }
+  #okxImg{
+    width: 10%;
+    height: auto;
+  }
+  
+  
+  #okxImg2{
+    width: 9%;
+    height: auto;
+  }
+  #okxImg4{
+    width: 8%;
+    height: auto;
+  }
+   
+  #okxImg5{
+    width: 8%;
+    height: auto;
+  }
+  #okxImg6{
+    width: 8%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #conBuy{
+    font-size: 3rem;
+  
+  }
+  #steps1{
+    padding:0 5%;
+ 
+  }
+  #steps2{
+ 
+    padding:0 5%;
+  }
+
+
+  .box {
+    flex: 40 0 40%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+
+  #cr5{
+    margin-top: -2rem; 
+  }
+#okxImg{
+  width: 16%;
+  height: auto;
+}
+
+
+#okxImg2{
+  width: 10%;
+  height: auto;
+}
+#okxImg4{
+  width: 10%;
+  height: auto;
+}
+ 
+#okxImg5{
+  width: 10%;
+  height: auto;
+}
+#okxImg6{
+  width: 10%;
+  height: auto;
+}
+
+}
+@media only screen and (max-width: 500px) {
+  #steps1, #steps2 {
+    flex-direction: column;
+    padding: 0 5%;
+  }
+  
+  .box {
+    flex: 100 0 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  #cr2{
+    margin-top: 0.5rem;
+  }
+  #okxImg{
+    width: 13%;
+    height: auto;
+  }
+  #cr1{
+    margin-top: 4rem;
+  }
+  #cr3{
+    margin-top: 1rem;
+  }
+  
+  
+  #okxImg2{
+    width: 8%;
+    height: auto;
+  }
+  #okxImg4{
+    width: 7%;
+    height: auto;
+  }
+   
+  #okxImg5{
+    width: 8%;
+    height: auto;
+  }
+  #okxImg6{
+    width: 6%;
+    height: auto;
+  }
+  #link-button{
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+  #link-button2{
+    margin-top: -1rem;
+  }
+  #link-button3{
+    margin-top: -1rem;
+  }
+  #link-button4{
+    margin-top: -1rem;
+  }
+  #link-button5{
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+  #link-button6{
+    margin-top: -1rem;
+  }
+
+}
+
+
+/**
+
+gh
+gh
+
+h
+h
+h
+
+h
+h
+h
+
+h
+
+hh
+
+h
+h
+h
+h
+
+h
+hh
+h
+hatchh
+h
+h
+h
+h
+h
+h
+h
+h
+h
+h
+
+TOKENOMICS
+**/
+
+#tokenomics{
+  margin-top: 8%;
+  text-align: center;
+  font-size: 4rem;
+}
+#tmain{
+  margin-top: 6%;
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  color: #807a7a;
+}
+
+#t1img{
+  width: 40%;
+  height: auto;
+  position: relative;
+  margin-top: 12%;
+}
+#t2img{
+  width: 40%;
+  height: auto;
+}
+#t3img{
+  width: 55%;
+  height: auto;
+}
+#t1, #t2, #t3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#lp{
+  font-size: 2rem;
+}
+#disc{
+  display: flex;
+  background-color: #1884ff; /* Adds a blue background */
+  /* Ensures text is readable on the blue background */
+  padding: 20px; /* Adds some padding for better appearance */
+  border-radius: 10px; /* Optional: Adds rounded corners for a nicer look */
+ color: white;
+ margin-top: 10%;
+ 
+}
+
+#disc1{
+  font-size: 3rem;
+  color: #00397a;
+
+}
+#disc21, #disc2{
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5rem;
+}
+
+
+#strongKim{
+  width: 30%;
+  height: auto;
+  position: relative;
+  margin-top: -10%;
+  object-fit: contain; 
+
+
+
+}
+
+#discLeft{
+  margin-left: 10%;
+  
+  
+}
+
+
+@media only screen and (max-width: 795px) {
+  #tokenomics{
+    font-size: 3rem;
+  }
+  #lp{
+    font-size: 1.5rem
+  }
+  #t1img{
+    width: 60%;
+    height: auto;
+    position: relative;
+    margin-top: 12%;
+  }
+  #t2img{
+    width: 60%;
+    height: auto;
+  }
+  #t3img{
+    width: 75%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 690px) {
+#tmain{
+  flex-direction: column;
+}
+
+#t1img{
+  width: 50%;
+  height: auto;
+  position: relative;
+  margin-top: 0%;
+}
+#lp{
+  font-size: 2rem;
+  margin-top: -.5rem;
+}
+#t2img{
+  width: 40%;
+  height: auto;
+}
+#t3img{
+  width: 55%;
+  height: auto;
+}
+}
+
+
+
+@media only screen and (max-width: 1190px) {
+  #strongKim{
+    width: 40%;
+    height: auto;
+    margin-top: -15%;
+  
+  }
+  #disc21, #disc2{
+    font-size: 1rem;
+  }
+  
+  
+}
+
+@media only screen and (max-width: 850px) {
+  
+ 
+  #strongKim{
+    width: 40%;
+    height: auto;
+    margin-top: -20%;
+  
+  }
+
+  
+}
+@media only screen and (max-width: 700px) {
+  
+  #strongKim{
+    width: 40%;
+    height: auto;
+    margin-top: -25%;
+  
+  }
+  
+ 
+
+}
+@media only screen and (max-width: 650px) {
+  
+ 
+  #strongKim{
+    width: 40%;
+    height: auto;
+    margin-top: -20%;
+    margin-right: 0rem;
+  
+  }
+  #disc21, #disc2{
+    font-size: .7rem;
+  }
+  #disc{
+    
+    padding: 1rem; /* Adds some padding for better appearance */
+  
+  }
+  #discLeft{
+  margin-left:auto;
+  
+  }
+  #disc1{
+    font-size: 2rem;
+    color: #00397a;
+  
+  }
+}
+@media only screen and (max-width: 480px) {
+  
+ 
+  #strongKim{
+    width: 45%;
+    height: auto;
+    margin-top: -20%;
+  
+  
+  }
+  #disc21,  #disc2{
+    font-size: .7rem;
+  }
+  #disc{
+    
+    padding: 1rem; /* Adds some padding for better appearance */
+  
+}
+#disc1{
+  font-size: 2rem;
+}
+
+}
+@media only screen and (max-width: 431px) {
+  
+ 
+  #strongKim{
+    width: 50%;
+    height: auto;
+    margin-top: -40%;
+  
+  
+  }
+  #disc21, #disc2{
+    font-size: .7rem;
+  }
+  #disc{
+    
+    padding: 1rem; /* Adds some padding for better appearance */
+  
+}
+#disc1{
+  font-size: 2rem;
+}
+
+}
+
+@media only screen and (max-width: 350px) {
+  
+ 
+  #strongKim{
+    width: 50%;
+    height: auto;
+    margin-top: -40%;
+  
+  
+  }
+  #disc21,  #disc2{
+    font-size: .6rem;
+  }
+
+#disc1{
+  font-size: 2rem;
+}
+
+
+}
+
+@media only screen and (max-width: 330px) {
+  
+ 
+  #strongKim{
+    width: 60%;
+    height: auto;
+    margin-top: -50%;
+  
+  
+  }
+  #disc21,  #disc2{
+    font-size: .6rem;
+  }
+
+#disc1{
+  font-size: 2rem;
+}
+
+
+}
+
+
+
+
+/**
+this is the shake element**/
+
+.shake-element:hover {
+    animation: shake 0.5s;
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(10deg);
+    }
+  
+    50% {
+      transform: rotate(-10deg);
+    }
+  
+    75% {
+      transform: rotate(10deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+
+
+
+ /** this is the scrolling list*/
+ .news-ticker {
+    
+  width: 100%;
+  /* Adjust width as needed */
+  overflow: hidden;
+  /* Hide overflow to hide text that goes beyond boundaries */
+  background-color: #ffffff;
+  /* Optional: Background color */
+  box-shadow: 1.1rem 1.1rem 2.2rem rgba(0, 0, 0, 0.2);
+}
+.news-ticker2 {
+  margin-top: 7rem;
+  width: 100%;
+  /* Adjust width as needed */
+  overflow: hidden;
+  /* Hide overflow to hide text that goes beyond boundaries */
+  background-color: #ffffff;
+  /* Optional: Background color */
+
+}
+
+
+.ticker-container {
+  display: inline-block;
+  /* Ensure elements stay in a single line */
+  white-space: nowrap;
+  /* Prevent text from wrapping */
+  animation: ticker-scroll 300s linear infinite;
+  /* Infinite animation loop */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #807a7a;
+}
+
+.ticker-text {
+  margin-right: 4rem;
+  /* Adjust spacing between words */
+  font-size: 1.5rem;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+}
+.ticker-text2 {
+  margin-right: 4rem;
+ 
+
+  
+}
+.ticker-text3 {
+  margin-right: 4rem;
+ 
+
+}
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#cr1, #cr2, #cr3, #cr4{
+  font-size: 2rem;
+  font-weight: bold;
+}
+#cr5{
+  font-size: 1.2rem;
+}
+
+
+    
+.animate-jump {
+  opacity: 0;
+  transform: translateY(50px);
+  /* Initial position off-screen */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.animate-jump.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
